@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        *body{box-sizing: border-box;padding: 0%;margin: 0%;}
+        body{background-color:seashell;}
+        .main{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);background-color: lightcoral;border-radius: 30px;padding: 10px;text-align: center;}
+        .a{width: 80%;padding: 5px;font-family: 'Times New Roman', Times, serif;border-radius: 30px;border: 1px;text-align: center;}
+        .b{width: 80%;border-radius: 30px;border: 1px;font-size: 20px;font-style: inherit;padding: 5px;border-top: 10px;}
+        .b:hover{background-color: lawngreen;border-radius: 0px;}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <form>
+     <h1>PAYMENT DETAILS</h1>
+     <p>Card number : <input type="number" name="CN" id="CN" class="a"></p>
+     <p>Card type : 
+        <select name="card_type" id="card_type" required class="a">
+          <option value="">--Enter Your Card Type--</option>
+          <option value="mastercard">Mastercard</option>
+          <option value="rupay">Rupay</option>
+          <option value="visa">Visa</option>
+        </select>
+     </p>
+     <p>Expiration date : <input type="date" name="exp" id="exp" class="a"></p>
+     <p>CVV : <br><input type="password" name="cvv" id="cvv" class="a"></p>
+     <input type="submit" value="PAY NOW" class="b">
+    </form>
+    </div>
+</body>
+</html>
